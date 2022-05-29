@@ -1,0 +1,217 @@
+10.6s 1 /opt/conda/lib/python3.7/site-packages/papermill/iorw.py:50: FutureWarning: pyarrow.HadoopFileSystem is deprecated as of 2.0.0, please use pyarrow.fs.HadoopFileSystem instead.
+10.6s 2 from pyarrow import HadoopFileSystem
+13.7s 3 <class 'pandas.core.frame.DataFrame'>
+13.7s 4 RangeIndex: 2200 entries, 0 to 2199
+13.7s 5 Data columns (total 8 columns):
+13.7s 6 #   Column       Non-Null Count  Dtype
+13.7s 7 ---  ------       --------------  -----
+13.7s 8 0   N            2200 non-null   int64
+13.7s 9 1   P            2200 non-null   int64
+13.7s 10 2   K            2200 non-null   int64
+13.7s 11 3   temperature  2200 non-null   float64
+13.7s 12 4   humidity     2200 non-null   float64
+13.7s 13 5   ph           2200 non-null   float64
+13.7s 14 6   rainfall     2200 non-null   float64
+13.7s 15 7   label        2200 non-null   object
+13.7s 16 dtypes: float64(4), int64(3), object(1)
+13.7s 17 memory usage: 137.6+ KB
+59.5s 18 KNN Accuracy is:  0.975
+59.5s 19 precision    recall  f1-score   support
+59.5s 20 
+59.5s 21 apple       1.00      1.00      1.00        13
+59.5s 22 banana       1.00      1.00      1.00        17
+59.5s 23 blackgram       0.94      1.00      0.97        16
+59.5s 24 chickpea       1.00      1.00      1.00        21
+59.5s 25 coconut       1.00      1.00      1.00        21
+59.5s 26 coffee       1.00      1.00      1.00        22
+59.5s 27 cotton       0.95      1.00      0.98        20
+59.5s 28 grapes       1.00      1.00      1.00        18
+59.5s 29 jute       0.89      0.86      0.87        28
+59.5s 30 kidneybeans       0.93      1.00      0.97        14
+59.5s 31 lentil       0.96      1.00      0.98        23
+59.5s 32 maize       1.00      0.95      0.98        21
+59.5s 33 mango       1.00      1.00      1.00        26
+59.5s 34 mothbeans       1.00      0.89      0.94        19
+59.5s 35 mungbean       1.00      1.00      1.00        24
+59.5s 36 muskmelon       1.00      1.00      1.00        23
+59.5s 37 orange       1.00      1.00      1.00        29
+59.5s 38 papaya       1.00      1.00      1.00        19
+59.5s 39 pigeonpeas       1.00      0.94      0.97        18
+59.5s 40 pomegranate       1.00      1.00      1.00        17
+59.5s 41 rice       0.76      0.81      0.79        16
+59.5s 42 watermelon       1.00      1.00      1.00        15
+59.5s 43 
+59.5s 44 accuracy                           0.97       440
+59.5s 45 macro avg       0.97      0.98      0.97       440
+59.5s 46 weighted avg       0.98      0.97      0.98       440
+59.5s 47 
+59.8s 48 Cross validation score:  [0.97727273 0.98181818 0.97954545 0.97954545 0.97954545]
+60.2s 49 knn_train_accuracy =  0.9886363636363636
+60.2s 50 knn_test_accuracy =  0.975
+64.4s 51 Fitting 3 folds for each of 42 candidates, totalling 126 fits
+64.4s 52 [Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
+67.5s 53 [Parallel(n_jobs=-1)]: Done  56 tasks      | elapsed:    2.8s
+67.8s 54 [Parallel(n_jobs=-1)]: Done 126 out of 126 | elapsed:    3.4s finished
+68.8s 55 knn_train_accuracy =  1.0
+68.8s 56 knn_test_accuracy =  0.9727272727272728
+69.3s 57 Decision Tree's Accuracy is:  90.0
+69.3s 58 precision    recall  f1-score   support
+69.3s 59 
+69.3s 60 apple       1.00      1.00      1.00        13
+69.3s 61 banana       1.00      1.00      1.00        17
+69.3s 62 blackgram       0.59      1.00      0.74        16
+69.3s 63 chickpea       1.00      1.00      1.00        21
+69.3s 64 coconut       0.91      1.00      0.95        21
+69.3s 65 coffee       1.00      1.00      1.00        22
+69.3s 66 cotton       1.00      1.00      1.00        20
+69.3s 67 grapes       1.00      1.00      1.00        18
+69.3s 68 jute       0.74      0.93      0.83        28
+69.3s 69 kidneybeans       0.00      0.00      0.00        14
+69.3s 70 lentil       0.68      1.00      0.81        23
+69.3s 71 maize       1.00      1.00      1.00        21
+69.3s 72 mango       1.00      1.00      1.00        26
+69.3s 73 mothbeans       0.00      0.00      0.00        19
+69.3s 74 mungbean       1.00      1.00      1.00        24
+69.3s 75 muskmelon       1.00      1.00      1.00        23
+69.3s 76 orange       1.00      1.00      1.00        29
+69.3s 77 papaya       1.00      0.84      0.91        19
+69.3s 78 pigeonpeas       0.62      1.00      0.77        18
+69.3s 79 pomegranate       1.00      1.00      1.00        17
+69.3s 80 rice       1.00      0.62      0.77        16
+69.3s 81 watermelon       1.00      1.00      1.00        15
+69.3s 82 
+69.3s 83 accuracy                           0.90       440
+69.3s 84 macro avg       0.84      0.88      0.85       440
+69.3s 85 weighted avg       0.86      0.90      0.87       440
+69.3s 86 
+69.6s 87 Cross validation score:  [0.93636364 0.90909091 0.91818182 0.87045455 0.93636364]
+69.8s 88 Training accuracy =  0.8818181818181818
+69.8s 89 Testing accuracy =  0.9
+72.3s 90 Random Forest Accuracy is:  0.990909090909091
+72.3s 91 precision    recall  f1-score   support
+72.3s 92 
+72.3s 93 apple       1.00      1.00      1.00        13
+72.3s 94 banana       1.00      1.00      1.00        17
+72.3s 95 blackgram       0.94      1.00      0.97        16
+72.3s 96 chickpea       1.00      1.00      1.00        21
+72.3s 97 coconut       1.00      1.00      1.00        21
+72.3s 98 coffee       1.00      1.00      1.00        22
+72.3s 99 cotton       1.00      1.00      1.00        20
+72.3s 100 grapes       1.00      1.00      1.00        18
+72.3s 101 jute       0.90      1.00      0.95        28
+72.3s 102 kidneybeans       1.00      1.00      1.00        14
+72.3s 103 lentil       1.00      1.00      1.00        23
+72.3s 104 maize       1.00      1.00      1.00        21
+72.3s 105 mango       1.00      1.00      1.00        26
+72.3s 106 mothbeans       1.00      0.95      0.97        19
+72.3s 107 mungbean       1.00      1.00      1.00        24
+72.3s 108 muskmelon       1.00      1.00      1.00        23
+72.3s 109 orange       1.00      1.00      1.00        29
+72.3s 110 papaya       1.00      1.00      1.00        19
+72.3s 111 pigeonpeas       1.00      1.00      1.00        18
+72.3s 112 pomegranate       1.00      1.00      1.00        17
+72.3s 113 rice       1.00      0.81      0.90        16
+72.3s 114 watermelon       1.00      1.00      1.00        15
+72.3s 115 
+72.3s 116 accuracy                           0.99       440
+72.3s 117 macro avg       0.99      0.99      0.99       440
+72.3s 118 weighted avg       0.99      0.99      0.99       440
+72.3s 119 
+72.9s 120 Cross validation score:  [0.99772727 0.99545455 0.99772727 0.99318182 0.98863636]
+73.1s 121 Training accuracy =  1.0
+73.1s 122 Testing accuracy =  0.990909090909091
+75.6s 123 Naive Bayes Accuracy is:  0.990909090909091
+75.6s 124 precision    recall  f1-score   support
+75.6s 125 
+75.6s 126 apple       1.00      1.00      1.00        13
+75.6s 127 banana       1.00      1.00      1.00        17
+75.6s 128 blackgram       1.00      1.00      1.00        16
+75.6s 129 chickpea       1.00      1.00      1.00        21
+75.6s 130 coconut       1.00      1.00      1.00        21
+75.6s 131 coffee       1.00      1.00      1.00        22
+75.6s 132 cotton       1.00      1.00      1.00        20
+75.6s 133 grapes       1.00      1.00      1.00        18
+75.6s 134 jute       0.88      1.00      0.93        28
+75.6s 135 kidneybeans       1.00      1.00      1.00        14
+75.6s 136 lentil       1.00      1.00      1.00        23
+75.6s 137 maize       1.00      1.00      1.00        21
+75.6s 138 mango       1.00      1.00      1.00        26
+75.6s 139 mothbeans       1.00      1.00      1.00        19
+75.6s 140 mungbean       1.00      1.00      1.00        24
+75.6s 141 muskmelon       1.00      1.00      1.00        23
+75.6s 142 orange       1.00      1.00      1.00        29
+75.6s 143 papaya       1.00      1.00      1.00        19
+75.6s 144 pigeonpeas       1.00      1.00      1.00        18
+75.6s 145 pomegranate       1.00      1.00      1.00        17
+75.6s 146 rice       1.00      0.75      0.86        16
+75.6s 147 watermelon       1.00      1.00      1.00        15
+75.6s 148 
+75.6s 149 accuracy                           0.99       440
+75.6s 150 macro avg       0.99      0.99      0.99       440
+75.6s 151 weighted avg       0.99      0.99      0.99       440
+75.6s 152 
+75.8s 153 Cross validation score:  [0.99772727 0.99545455 0.99545455 0.99545455 0.99090909]
+76.1s 154 Training accuracy =  0.9960227272727272
+76.1s 155 Testing accuracy =  0.990909090909091
+79.1s 156 [18:20:21] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+79.8s 157 XGBoost Accuracy is:  0.9931818181818182
+79.8s 158 precision    recall  f1-score   support
+79.8s 159 
+79.8s 160 apple       1.00      1.00      1.00        13
+79.8s 161 banana       1.00      1.00      1.00        17
+79.8s 162 blackgram       1.00      1.00      1.00        16
+79.8s 163 chickpea       1.00      1.00      1.00        21
+79.8s 164 coconut       1.00      1.00      1.00        21
+79.8s 165 coffee       0.96      1.00      0.98        22
+79.8s 166 cotton       1.00      1.00      1.00        20
+79.8s 167 grapes       1.00      1.00      1.00        18
+79.8s 168 jute       1.00      0.93      0.96        28
+79.8s 169 kidneybeans       1.00      1.00      1.00        14
+79.8s 170 lentil       0.96      1.00      0.98        23
+79.8s 171 maize       1.00      1.00      1.00        21
+79.8s 172 mango       1.00      1.00      1.00        26
+79.8s 173 mothbeans       1.00      0.95      0.97        19
+79.8s 174 mungbean       1.00      1.00      1.00        24
+79.8s 175 muskmelon       1.00      1.00      1.00        23
+79.8s 176 orange       1.00      1.00      1.00        29
+79.8s 177 papaya       1.00      1.00      1.00        19
+79.8s 178 pigeonpeas       1.00      1.00      1.00        18
+79.8s 179 pomegranate       1.00      1.00      1.00        17
+79.8s 180 rice       0.94      1.00      0.97        16
+79.8s 181 watermelon       1.00      1.00      1.00        15
+79.8s 182 
+79.8s 183 accuracy                           0.99       440
+79.8s 184 macro avg       0.99      0.99      0.99       440
+79.8s 185 weighted avg       0.99      0.99      0.99       440
+79.8s 186 
+80.3s 187 [18:20:22] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+81.2s 188 [18:20:23] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+82.2s 189 [18:20:24] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+83.1s 190 [18:20:25] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+84.0s 191 [18:20:26] WARNING: ../src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+84.7s 192 Cross validation score:  [0.99318182 0.99318182 0.99318182 0.99090909 0.99090909]
+85.0s 193 Training accuracy =  1.0
+85.0s 194 Testing accuracy =  0.9931818181818182
+93.1s 195 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2567: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+93.1s 196 FutureWarning,
+93.1s 197 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+93.7s 198 [NbConvertApp] Writing 2177902 bytes to __notebook__.ipynb
+95.6s 199 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2567: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+95.6s 200 FutureWarning,
+95.6s 201 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+96.7s 202 [NbConvertApp] Support files will be in __results___files/
+96.7s 203 [NbConvertApp] Making directory __results___files
+96.7s 204 [NbConvertApp] Making directory __results___files
+96.7s 205 [NbConvertApp] Making directory __results___files
+96.7s 206 [NbConvertApp] Making directory __results___files
+96.7s 207 [NbConvertApp] Making directory __results___files
+96.7s 208 [NbConvertApp] Making directory __results___files
+96.7s 209 [NbConvertApp] Making directory __results___files
+96.7s 210 [NbConvertApp] Making directory __results___files
+96.7s 211 [NbConvertApp] Making directory __results___files
+96.7s 212 [NbConvertApp] Making directory __results___files
+96.7s 213 [NbConvertApp] Making directory __results___files
+96.7s 214 [NbConvertApp] Making directory __results___files
+96.7s 215 [NbConvertApp] Making directory __results___files
+96.7s 216 [NbConvertApp] Making directory __results___files
+96.7s 217 [NbConvertApp] Writing 400873 bytes to __results__.html
